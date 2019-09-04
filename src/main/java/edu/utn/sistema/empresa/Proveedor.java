@@ -10,6 +10,28 @@ package edu.utn.sistema.empresa;
  * @author Agustin
  */
 public class Proveedor {
+    //ATRIBUTOS
+    private String razonSocial;
+    private int nroProveedor;
+
+    //CONSTRUCTOR
+    public Proveedor() {}
+
+    //GETTERS AND SETTERS
+    public String getRazonSocial() {
+        return razonSocial;
+    }
+    public void setRazonSocial(String razonSocial) {
+        this.razonSocial = razonSocial;
+    }
+
+    public int getNroProveedor() {
+        return nroProveedor;
+    }
+    public void setNroProveedor(int nroProveedor) {
+        this.nroProveedor = nroProveedor;
+    }
+    
     
     
 }
