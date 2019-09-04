@@ -27,27 +27,7 @@ public abstract class Persona {
         this.documento = documento;
     }
 
-    public Persona(String nombre) {
-        this.nombre = nombre;
-    }
 
-    public Persona(String nombre, String apellido) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-    }
-
-    public Persona(String nombre, String apellido, int edad) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.edad = edad;
-    }
-
-    public Persona(String nombre, String apellido, int edad, Direccion direccion) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.edad = edad;
-        this.direccion = direccion;
-    }
 
     public Persona() {
     }
