@@ -9,6 +9,16 @@ package edu.utn.sistema.cuentas;
  *
  * @author fabri
  */
-public class CtaCte {
+public class Movimientos_CtaCte {
+    private Cuentas cuenta;
+    
+    public Cuentas getCuenta() {
+        return cuenta;
+    }
+
+    public void setCuenta(Cuentas cuenta) {
+        this.cuenta = cuenta;
+    }
+    
     
 }
