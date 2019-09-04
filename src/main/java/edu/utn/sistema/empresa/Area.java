@@ -5,6 +5,7 @@
  */
 package edu.utn.sistema.empresa;
 
+import edu.utn.sistema.empresa.base.Direccion;
 import edu.utn.sistema.empresa.entidades.EntityBean;
 import java.io.Serializable;
 
@@ -16,14 +17,15 @@ public class Area extends EntityBean implements Serializable{
     
     //ATRIBUTOS
     private static final long serialVersionUID = 1L;
-    
     private String nombreArea;
-    
     private String descripcionArea;
 
+    //RELACIONES
+    private Vendedor vendedor;
+    private Direccion direccion;
+    
     //CONSTRUCTORES
-    public Area() {
-    }
+    public Area() {}
 
     public Area(String nombreArea, String descripcionArea) {
         this.nombreArea = nombreArea;
@@ -35,7 +37,6 @@ public class Area extends EntityBean implements Serializable{
     public String getNombreArea() {
         return nombreArea;
     }
-
     public void setNombreArea(String nombreArea) {
         this.nombreArea = nombreArea;
     }
@@ -43,11 +44,22 @@ public class Area extends EntityBean implements Serializable{
     public String getDescripcionArea() {
         return descripcionArea;
     }
-
     public void setDescripcionArea(String descripcionArea) {
         this.descripcionArea = descripcionArea;
     }
-    
-    
+
+    public Vendedor getVendedor() {
+        return vendedor;
+    }
+    public void setVendedor(Vendedor vendedor) {
+        this.vendedor = vendedor;
+    }
+
+    public Direccion getDireccion() {
+        return direccion;
+    }
+    public void setDireccion(Direccion direccion) {
+        this.direccion = direccion;
+    }
     
 }
