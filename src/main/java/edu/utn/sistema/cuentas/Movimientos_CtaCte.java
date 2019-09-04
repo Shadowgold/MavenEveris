@@ -11,6 +11,15 @@ package edu.utn.sistema.cuentas;
  */
 public class Movimientos_CtaCte {
     private Cuentas cuenta;
+
+    public Movimientos_CtaCte() {
+    }
+
+    public Movimientos_CtaCte(Cuentas cuenta) {
+        this.cuenta = cuenta;
+    }
+    
+    
     
     public Cuentas getCuenta() {
         return cuenta;

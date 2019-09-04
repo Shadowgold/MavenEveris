@@ -16,7 +16,10 @@ import edu.utn.sistema.empresa.base.Documento;
 public class Cliente extends Persona{
     private int nroCliente;
     private String tipoCliente;
-    private Movimientos_CtaCte movCtaCte; 
+    private Movimientos_CtaCte movCtaCte;
+
+    public Cliente() {
+    }
 
     public Cliente(int nroCliente, String tipoCliente, String nombre, String apellido, Direccion direccion, int edad, Documento dni) {
         super(nombre, apellido, edad , direccion, dni);

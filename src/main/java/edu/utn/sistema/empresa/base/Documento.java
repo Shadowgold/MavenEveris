@@ -37,22 +37,4 @@ public class Documento {
         this.Dni = Dni;
     }
     
-    
-    //Getter and Setter
-    public Persona getPersona() {
-        return persona;
-    }
-
-    public void setPersona(Persona persona) {
-        this.persona = persona;
-    }
-
-    public int getDni() {
-        return Dni;
-    }
-
-    public void setDni(int Dni) {
-        this.Dni = Dni;
-    }
-    
 }
