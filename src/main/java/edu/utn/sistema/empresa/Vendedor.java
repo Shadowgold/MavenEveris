@@ -27,6 +27,23 @@ public class Vendedor extends Persona{
     public Vendedor() {
         facturas = new ArrayList<>();
     }
+    public Vendedor(int nroVendedor, Area area, Factura factura) {
+        this.nroVendedor = nroVendedor;
+        this.area = area;
+        this.facturas = new ArrayList<>();
+        this.facturas.add(factura);
+    }
+    public Vendedor(int nroVendedor, Area area, List<Factura> facturas) {
+        this.nroVendedor = nroVendedor;
+        this.area = area;
+        this.facturas = facturas;
+    }
+    public Vendedor(int nroVendedor, Area area, List<Factura> facturas, String nombre, String apellido, String direccion, int edad, int dni) {
+        super(nombre, apellido, direccion, edad, dni);
+        this.nroVendedor = nroVendedor;
+        this.area = area;
+        this.facturas = facturas;
+    }
     
     //GETTERS AND SETTERS
     public int getNroVendedor() {
