@@ -8,6 +8,8 @@ package edu.utn.sistema.empresa;
 import edu.utn.sistema.empresa.base.Direccion;
 import edu.utn.sistema.empresa.entidades.EntityBean;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -21,15 +23,18 @@ public class Area extends EntityBean implements Serializable{
     private String descripcionArea;
 
     //RELACIONES
-    private Vendedor vendedor;
+    private List<Vendedor> vendedores;
     private Direccion direccion;
     
     //CONSTRUCTORES
-    public Area() {}
+    public Area() {
+        vendedores = new ArrayList<>();
+    }
 
     public Area(String nombreArea, String descripcionArea) {
         this.nombreArea = nombreArea;
         this.descripcionArea = descripcionArea;
+        vendedores = new ArrayList<>();
     }
 
     
@@ -48,18 +53,21 @@ public class Area extends EntityBean implements Serializable{
         this.descripcionArea = descripcionArea;
     }
 
-    public Vendedor getVendedor() {
-        return vendedor;
-    }
-    public void setVendedor(Vendedor vendedor) {
-        this.vendedor = vendedor;
-    }
-
     public Direccion getDireccion() {
         return direccion;
     }
     public void setDireccion(Direccion direccion) {
         this.direccion = direccion;
+    }
+
+    public List<Vendedor> getVendedores() {
+        return vendedores;
+    }
+    public void setVendedores(List<Vendedor> vendedores) {
+        this.vendedores = vendedores;
+    }
+    public void addVendedor(Vendedor vendedor){
+        this.vendedores.add(vendedor);
     }
     
 }
