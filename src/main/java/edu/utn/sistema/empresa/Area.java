@@ -30,11 +30,23 @@ public class Area extends EntityBean implements Serializable{
     public Area() {
         vendedores = new ArrayList<>();
     }
-
-    public Area(String nombreArea, String descripcionArea) {
+    public Area(String nombreArea, String descripcionArea, Direccion direccion) {
         this.nombreArea = nombreArea;
         this.descripcionArea = descripcionArea;
-        vendedores = new ArrayList<>();
+        this.direccion = direccion;
+    }
+    public Area(String nombreArea, String descripcionArea,Direccion direccion, Vendedor vendedor) {
+        this.nombreArea = nombreArea;
+        this.descripcionArea = descripcionArea;
+        this.direccion = direccion;
+        this.vendedores = new ArrayList<>();
+        this.vendedores.add(vendedor);
+    }
+    public Area(String nombreArea, String descripcionArea, List<Vendedor> vendedores, Direccion direccion) {
+        this.nombreArea = nombreArea;
+        this.descripcionArea = descripcionArea;
+        this.vendedores = vendedores;
+        this.direccion = direccion;
     }
 
     
