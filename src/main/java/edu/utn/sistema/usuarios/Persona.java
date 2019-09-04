@@ -5,21 +5,48 @@
  */
 package edu.utn.sistema.usuarios;
 
+import edu.utn.sistema.empresa.base.Direccion;
+import edu.utn.sistema.empresa.base.Documento;
+
 /**
  *
  * @author fabri
  */
 public abstract class Persona {
     
-    private String nombre, apellido, direccion;
-    private int edad, dni;
+    private String nombre, apellido;
+    private int edad;
+    private Direccion direccion;
+    private Documento documento;
 
-    public Persona(String nombre, String apellido, String direccion, int edad, int dni) {
+    public Persona(String nombre, String apellido, int edad, Direccion direccion, Documento documento) {
         this.nombre = nombre;
         this.apellido = apellido;
-        this.direccion = direccion;
         this.edad = edad;
-        this.dni = dni;
+        this.direccion = direccion;
+        this.documento = documento;
+    }
+
+    public Persona(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Persona(String nombre, String apellido) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
+
+    public Persona(String nombre, String apellido, int edad) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+    }
+
+    public Persona(String nombre, String apellido, int edad, Direccion direccion) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.direccion = direccion;
     }
 
     public Persona() {
@@ -41,14 +68,6 @@ public abstract class Persona {
         this.apellido = apellido;
     }
 
-    public String getDireccion() {
-        return direccion;
-    }
-
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
-    }
-
     public int getEdad() {
         return edad;
     }
@@ -56,14 +75,5 @@ public abstract class Persona {
     public void setEdad(int edad) {
         this.edad = edad;
     }
-
-    public int getDni() {
-        return dni;
-    }
-
-    public void setDni(int dni) {
-        this.dni = dni;
-    }
-    
     
 }
