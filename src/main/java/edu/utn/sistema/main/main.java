@@ -27,7 +27,8 @@ public class main {
         Formulario formulario = new Formulario();
         Resumen resumen = new Resumen(123123, "12-Oct-2019");
         
-        
+        Formulario f = new Formulario();
+        f.crearPdf();
     }
     
 }
