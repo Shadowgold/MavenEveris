@@ -12,6 +12,15 @@ package edu.utn.sistema.cuentas;
 public class Cuentas {
     private int CBU;
 
+    public Cuentas(int CBU) {
+        this.CBU = CBU;
+    }
+
+    public Cuentas() {
+    }
+    
+    
+
     public int getCBU() {
         return CBU;
     }

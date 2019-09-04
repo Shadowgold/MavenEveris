@@ -1,0 +1,16 @@
+edu\utn\sistema\empresa\base\Pais.class
+edu\utn\sistema\usuarios\Cliente.class
+edu\utn\sistema\cuentas\Cuentas.class
+edu\utn\sistema\empresa\Vendedor.class
+edu\utn\sistema\ventas\Formulario.class
+edu\utn\sistema\empresa\base\Documento.class
+edu\utn\sistema\empresa\Area.class
+edu\utn\sistema\ventas\Factura.class
+edu\utn\sistema\empresa\Proveedor.class
+edu\utn\sistema\empresa\entidades\EntityBean.class
+edu\utn\sistema\empresa\entidades\EntityBean_.class
+edu\utn\sistema\empresa\base\Direccion.class
+edu\utn\sistema\usuarios\Persona.class
+edu\utn\sistema\cuentas\Movimientos_CtaCte.class
+edu\utn\sistema\main\main.class
+edu\utn\sistema\cuentas\Resumen.class
