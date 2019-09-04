@@ -5,10 +5,42 @@
  */
 package edu.utn.sistema.usuarios;
 
+import edu.utn.sistema.cuentas.Movimientos_CtaCte;
+
 /**
  *
  * @author fabri
  */
-public class Cliente {
+public class Cliente extends Persona{
+    private int nroCliente;
+    private String tipoCliente;
+    private Movimientos_CtaCte movCtaCte; 
+
+    public int getNroCliente() {
+        return nroCliente;
+    }
+
+    public void setNroCliente(int nroCliente) {
+        this.nroCliente = nroCliente;
+    }
+
+    public String getTipoCliente() {
+        return tipoCliente;
+    }
+
+    public void setTipoCliente(String tipoCliente) {
+        this.tipoCliente = tipoCliente;
+    }
+
+    public Movimientos_CtaCte getMovCtaCte() {
+        return movCtaCte;
+    }
+
+    public void setMovCtaCte(Movimientos_CtaCte movCtaCte) {
+        this.movCtaCte = movCtaCte;
+    }
+
+  
+    
     
 }

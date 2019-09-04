@@ -5,10 +5,48 @@
  */
 package edu.utn.sistema.cuentas;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author fabri
  */
 public class Resumen {
+    private List<Movimientos_CtaCte> movCtaCte = new ArrayList<>();
+    private int nroResumen;
+    private String fecha;  
+
+    public Resumen(int nroResumen, String fecha) {
+        this.nroResumen = nroResumen;
+        this.fecha = fecha;
+    }    
+
+    public List<Movimientos_CtaCte> getMovCtaCte() {
+        return movCtaCte;
+    }
+
+    public void setMovCtaCte(List<Movimientos_CtaCte> movCtaCte) {
+        this.movCtaCte = movCtaCte;
+    }
+
+
+    public int getNroResumen() {
+        return nroResumen;
+    }
+
+    public void setNroResumen(int nroResumen) {
+        this.nroResumen = nroResumen;
+    }
+
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+    
+    
     
 }
