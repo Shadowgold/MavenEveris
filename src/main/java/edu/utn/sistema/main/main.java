@@ -26,9 +26,8 @@ public class main {
         Movimientos_CtaCte mov = new Movimientos_CtaCte(cuenta, "Debito", "Compra Super Vea", cliente);
         Formulario formulario = new Formulario();
         Resumen resumen = new Resumen(123123, "12-Oct-2019");
-        
-        Formulario f = new Formulario();
-        f.crearPdf();
+
+        formulario.crearPdf();
     }
     
 }

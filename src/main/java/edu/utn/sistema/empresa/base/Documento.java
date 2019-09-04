@@ -19,4 +19,8 @@ public class Documento {
         this.Dni = Dni;
     }
     
+    public void setDni(int dni){
+        this.Dni = dni;
+    }
+    
 }
