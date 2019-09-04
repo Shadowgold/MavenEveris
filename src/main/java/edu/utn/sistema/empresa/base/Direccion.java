@@ -6,22 +6,30 @@ import edu.utn.sistema.usuarios.Persona;
 
 public class Direccion {
     
+    
+    //atributos
     private Persona persona;
     private Pais pais;
     private String calle;
     private String numero;
     private String localidad;
-
+    
+    
+    //constructor por defecto
     public Direccion() {
     }
-
+    
+    
+    //constructor sobrecargado
     public Direccion(Pais pais, String calle, String numero, String localidad) {
         this.pais = pais;
         this.calle = calle;
         this.numero = numero;
         this.localidad = localidad;
     }
-
+    
+    
+    //Get and Set
     public Pais getPais() {
         return pais;
     }
