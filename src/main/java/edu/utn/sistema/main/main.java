@@ -23,7 +23,7 @@ public class main {
         Cliente cliente = new Cliente(1, "Consumidor Final", "Pepe", "Argento", domicilio, 40, documento);
         
         Cuentas cuenta = new Cuentas(123141231);
-        Movimientos_CtaCte mov = new Movimientos_CtaCte(cuenta);
+        Movimientos_CtaCte mov = new Movimientos_CtaCte(cuenta, "Debito", "Compra Super Vea", cliente);
         Formulario formulario = new Formulario();
         Resumen resumen = new Resumen(123123, "12-Oct-2019");
         
