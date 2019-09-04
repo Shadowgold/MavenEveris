@@ -6,6 +6,8 @@
 package edu.utn.sistema.usuarios;
 
 import edu.utn.sistema.cuentas.Movimientos_CtaCte;
+import edu.utn.sistema.empresa.base.Direccion;
+import edu.utn.sistema.empresa.base.Documento;
 
 /**
  *
@@ -16,12 +18,11 @@ public class Cliente extends Persona{
     private String tipoCliente;
     private Movimientos_CtaCte movCtaCte; 
 
-    public Cliente(int nroCliente, String tipoCliente, String nombre, String apellido, String direccion, int edad, int dni) {
-        super(nombre, apellido, direccion, edad, dni);
+    public Cliente(int nroCliente, String tipoCliente, String nombre, String apellido, Direccion direccion, int edad, Documento dni) {
+        super(nombre, apellido, edad , direccion, dni);
         this.nroCliente = nroCliente;
         this.tipoCliente = tipoCliente;
-    }
-
+    }    
     
     public int getNroCliente() {
         return nroCliente;
