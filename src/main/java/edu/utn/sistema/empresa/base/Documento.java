@@ -19,8 +19,19 @@ public class Documento {
         this.Dni = Dni;
     }
     
-    public void setDni(int dni){
-        this.Dni = dni;
+    public Persona getPersona() {
+        return persona;
+    }
+
+    public void setPersona(Persona persona) {
+        this.persona = persona;
+    }
+
+    public int getDni() {
+        return Dni;
+    }
+    public void setDni(int Dni) {
+        this.Dni = Dni;
     }
     
 }
