@@ -14,12 +14,8 @@ import edu.utn.sistema.usuarios.Cliente;
 public class Movimientos_CtaCte {
     private Cuentas cuenta;
 
-    public Movimientos_CtaCte() {
-    }
-
-    public Movimientos_CtaCte(Cuentas cuenta) {
-        this.cuenta = cuenta;
-    }
+    
+   
     
     
     
