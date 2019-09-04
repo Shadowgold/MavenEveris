@@ -5,6 +5,8 @@
  */
 package edu.utn.sistema.empresa;
 
+import edu.utn.sistema.empresa.base.Direccion;
+import edu.utn.sistema.empresa.base.Documento;
 import edu.utn.sistema.usuarios.Persona;
 import edu.utn.sistema.ventas.Factura;
 import java.util.ArrayList;
@@ -38,8 +40,8 @@ public class Vendedor extends Persona{
         this.area = area;
         this.facturas = facturas;
     }
-    public Vendedor(int nroVendedor, Area area, List<Factura> facturas, String nombre, String apellido, String direccion, int edad, int dni) {
-        super(nombre, apellido, direccion, edad, dni);
+    public Vendedor(int nroVendedor, Area area, List<Factura> facturas, String nombre, String apellido, int edad, Direccion direccion, Documento dni) {
+        super(nombre, apellido, edad, direccion, dni);
         this.nroVendedor = nroVendedor;
         this.area = area;
         this.facturas = facturas;

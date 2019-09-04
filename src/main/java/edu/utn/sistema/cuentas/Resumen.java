@@ -5,6 +5,7 @@
  */
 package edu.utn.sistema.cuentas;
 
+import edu.utn.sistema.ventas.Formulario;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +13,7 @@ import java.util.List;
  *
  * @author fabri
  */
-public class Resumen {
+public class Resumen extends Formulario {
     private List<Movimientos_CtaCte> movCtaCte = new ArrayList<>();
     private int nroResumen;
     private String fecha;  

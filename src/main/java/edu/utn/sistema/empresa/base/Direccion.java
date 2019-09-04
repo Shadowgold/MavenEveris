@@ -1,9 +1,12 @@
 
 package edu.utn.sistema.empresa.base;
 
+import edu.utn.sistema.usuarios.Persona;
+
 
 public class Direccion {
     
+    private Persona persona;
     private Pais pais;
     private String calle;
     private String numero;
