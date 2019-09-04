@@ -6,6 +6,9 @@
 package edu.utn.sistema.empresa;
 
 import edu.utn.sistema.usuarios.Persona;
+import edu.utn.sistema.ventas.Factura;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -17,13 +20,15 @@ public class Vendedor extends Persona{
     private int nroVendedor;
 
     //RELACIONES
-    private Area areaVendedor;
+    private Area area;
+    private List<Factura> facturas;
     
     //CONSTRUCTOR
-    public Vendedor() {}
+    public Vendedor() {
+        facturas = new ArrayList<>();
+    }
     
     //GETTERS AND SETTERS
-
     public int getNroVendedor() {
         return nroVendedor;
     }
@@ -31,11 +36,21 @@ public class Vendedor extends Persona{
         this.nroVendedor = nroVendedor;
     }
 
-    public Area getAreaVendedor() {
-        return areaVendedor;
+    public Area getArea() {
+        return area;
     }
-    public void setAreaVendedor(Area areaVendedor) {
-        this.areaVendedor = areaVendedor;
+    public void setArea(Area area) {
+        this.area = area;
     }
-    
+
+    public List<Factura> getFacturas() {
+        return facturas;
+    }
+    public void setFacturas(List<Factura> facturas) {
+        this.facturas = facturas;
+    }
+    public void addFactura(Factura factura){
+        this.facturas.add(factura);
+    }
+
 }
