@@ -11,4 +11,36 @@ package edu.utn.sistema.empresa;
  */
 public class Area {
     
+    private String nombreArea;
+    
+    private String descripcionArea;
+
+    public Area() {
+    }
+
+    public Area(String nombreArea, String descripcionArea) {
+        this.nombreArea = nombreArea;
+        this.descripcionArea = descripcionArea;
+    }
+
+    
+    
+    public String getNombreArea() {
+        return nombreArea;
+    }
+
+    public void setNombreArea(String nombreArea) {
+        this.nombreArea = nombreArea;
+    }
+
+    public String getDescripcionArea() {
+        return descripcionArea;
+    }
+
+    public void setDescripcionArea(String descripcionArea) {
+        this.descripcionArea = descripcionArea;
+    }
+    
+    
+    
 }
