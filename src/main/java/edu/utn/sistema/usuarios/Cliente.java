@@ -16,6 +16,13 @@ public class Cliente extends Persona{
     private String tipoCliente;
     private Movimientos_CtaCte movCtaCte; 
 
+    public Cliente(int nroCliente, String tipoCliente, String nombre, String apellido, String direccion, int edad, int dni) {
+        super(nombre, apellido, direccion, edad, dni);
+        this.nroCliente = nroCliente;
+        this.tipoCliente = tipoCliente;
+    }
+
+    
     public int getNroCliente() {
         return nroCliente;
     }
