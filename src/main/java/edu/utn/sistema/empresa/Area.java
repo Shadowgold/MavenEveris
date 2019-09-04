@@ -5,16 +5,23 @@
  */
 package edu.utn.sistema.empresa;
 
+import edu.utn.sistema.empresa.entidades.EntityBean;
+import java.io.Serializable;
+
 /**
  *
  * @author Agustin
  */
-public class Area {
+public class Area extends EntityBean implements Serializable{
+    
+    //ATRIBUTOS
+    private static final long serialVersionUID = 1L;
     
     private String nombreArea;
     
     private String descripcionArea;
 
+    //CONSTRUCTORES
     public Area() {
     }
 
@@ -24,7 +31,7 @@ public class Area {
     }
 
     
-    
+    //GETTERS AND SETTERS
     public String getNombreArea() {
         return nombreArea;
     }

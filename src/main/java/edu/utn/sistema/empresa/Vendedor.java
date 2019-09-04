@@ -5,17 +5,17 @@
  */
 package edu.utn.sistema.empresa;
 
+import edu.utn.sistema.usuarios.Persona;
+
 /**
  *
  * @author Agustin
  */
-public class Vendedor {
+public class Vendedor extends Persona{
     
     //ATRIBUTOS
     private int nroVendedor;
-    private String nombreVendedor;
-    private int DNIVendedor;
-    
+
     //RELACIONES
     private Area areaVendedor;
     
@@ -29,20 +29,6 @@ public class Vendedor {
     }
     public void setNroVendedor(int nroVendedor) {
         this.nroVendedor = nroVendedor;
-    }
-
-    public String getNombreVendedor() {
-        return nombreVendedor;
-    }
-    public void setNombreVendedor(String nombreVendedor) {
-        this.nombreVendedor = nombreVendedor;
-    }
-
-    public int getDNIVendedor() {
-        return DNIVendedor;
-    }
-    public void setDNIVendedor(int DNIVendedor) {
-        this.DNIVendedor = DNIVendedor;
     }
 
     public Area getAreaVendedor() {
