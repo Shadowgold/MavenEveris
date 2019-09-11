@@ -9,6 +9,9 @@ package edu.utn.sistema.ventas;
  *
  * @author Colque
  */
-public class Factura {
+public class Factura extends Formulario {
+
+    public Factura() {
+    }
     
 }
