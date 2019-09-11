@@ -20,6 +20,7 @@ public abstract class Persona {
     private Documento documento;
 
     public Persona(String nombre, String apellido, int edad, Direccion direccion, Documento documento) {
+
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
